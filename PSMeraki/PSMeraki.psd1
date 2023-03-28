@@ -91,7 +91,9 @@ FunctionsToExport = 'Add-MrkNetworkStaticRoute', 'Add-MrkNetworkVLAN',
                'Set-MrkRestApiVersion', 'Set-MrkSwitchPort', 'Update-MrkDevice', 
                'Update-MrkNetwork', 'Update-MrkNetworkMRL3FwRule', 
                'Update-MrkNetworkMXL3FwRule', 'Update-MrkNetworkMXL7FwRule', 
-               'Update-MrkNetworkVLAN', 'Update-MrkOrgAdmin'
+               'Update-MrkNetworkVLAN', 'Update-MrkOrgAdmin', 'Get-MrkPolicyObject',
+               'Get-MrkPolicyObjectGroup', 'Add-MrkPolicyObject', 'Remove-MrkPolicyObject',
+               'Add-MrkPolicyObjectGroup', 'Set-MrkPolicyObjectGroup', 'Set-MrkPolicyObject'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = 'Add-MrkNetworkStaticRoute', 'Add-MrkNetworkVLAN', 
@@ -116,7 +118,9 @@ CmdletsToExport = 'Add-MrkNetworkStaticRoute', 'Add-MrkNetworkVLAN',
                'Set-MrkRestApiVersion', 'Set-MrkSwitchPort', 'Update-MrkDevice', 
                'Update-MrkNetwork', 'Update-MrkNetworkMRL3FwRule', 
                'Update-MrkNetworkMXL3FwRule', 'Update-MrkNetworkMXL7FwRule', 
-               'Update-MrkNetworkVLAN', 'Update-MrkOrgAdmin'
+               'Update-MrkNetworkVLAN', 'Update-MrkOrgAdmin', 'Get-MrkPolicyObject',
+               'Get-MrkPolicyObjectGroup', 'Add-MrkPolicyObject', 'Remove-MrkPolicyObject',
+               'Add-MrkPolicyObjectGroup', 'Set-MrkPolicyObjectGroup', 'Set-MrkPolicyObject'
 
 # Variables to export from this module
 # VariablesToExport = @()

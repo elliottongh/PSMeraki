@@ -87,9 +87,11 @@ function Update-MrkNetworkMXL3FwRule {
     #$ruleSource = Import-Csv -Path "C:\Users\YS0\OneDrive - Van Oord\Scripts\Meraki\demorules.txt" -Delimiter "`t";
     $ruleset = @()
     if (-not $reset){
-        $ruleSource = Get-MrkNetworkMXL3FwRule -networkId $networkId
+        $ruleSource = $(Get-MrkNetworkMXL3FwRule -networkId $networkId).rules
         #the non-default rules are in the array above the default
-        $ruleset = $ruleSource[0..$(($ruleSource.Count) -2)]
+        if ($ruleSource.count -gt 1) {
+            $ruleset = $ruleSource[0..$(($ruleSource.Count) -2)]
+        }
     }
 
     #populate the to-be ruleset first with the existing rules (will be none in case of reset)
